@@ -1,0 +1,9 @@
+3) Question: what are the key things you would consider when creating/consuming an API to ensure that it is secure and reliable?
+
+ans: While creating or consuming an API, there are several keypoints that we need to keep in mind:
+a) We should apply proper validations for all the required fields.
+b) All the exceptions should be handled properly in order to make sure that it can be shown easily on the frontend or to the end     user.
+c) Instead of using generic type of exceptions, try using custom exceptions so that code is much easy to read and maintain.
+d) We should think of all the edge-cases while creating an endpoint so that the code can't be broken easily.
+e) Proper Authentication and Authorization needs to be kept in mind, so that only specific endpoints are visible for the specific    users.
+f) It should be taken care that sensitive information are not being passed through the PathVariable or RequestParam as they are       exposed in the url, so that the security of the credentials are maintined.
