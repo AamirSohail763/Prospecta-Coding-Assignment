@@ -1,0 +1,16 @@
+I want a program that will take the CSV input above and produce CSV output with the results. If it is a value, then return a value. If it is a formula then calculate the formula and return the value of that formula.
+
+1. How will you tackle the challenge above?
+ans: While working with the Comma Seperated Values(CSV) we can take the input via Scanner class or additionally we can use BufferedReader to read the values from the file and split the values from the comma using .split() function in order to get the values to work with. Additionally, we can also use third-party APIs in order to get values from a CSV file.
+
+2. What type of errors you would you check for?
+ans: There are different kind of errors that we can face while working with CSV files:
+a) Matching error that can arise when the columns doesn't match with expected fields.
+b) Data translation error could occur if the encoding is incorrect or unexpected.
+c) Issues with values when the data length is either too long or too short, or even unaccptable character types are entered.
+d) Missing data errors when there is incomplete data is been given by the user.
+e) Non-digestible format error which includes simple format mismatch.
+
+
+3. How might a user break your code?
+ans: There is generally a circular dependency type of scenerio, in which our code may break or can get stuck in an infinite loop. This occurs when one field is dependent upon another field to get its value and that field itself is dependent upon the first one to finalize its value. So this becomes an infinte loop resulting to break our code.
